@@ -6,7 +6,7 @@ I'm sorry for this, but if you ever wanted to calculate what percentage of your 
 
 As the app notes, the definition of lockdown being used here is *really* loose because it was outside of my scope to account for individuals who have been in and out of lockdown or in "lockdown" but still required to go to a physical workplace. It's just shorthand for what percentage of your life has been impacted by COVID-19.
 
-## TECH
+## Tech
 
 I used vue-cli and bootstrap-vue for expediency.
 
