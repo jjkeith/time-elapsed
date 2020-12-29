@@ -2,7 +2,7 @@
   "name": "time-elapsed",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://jjkeith.github.io/time-elapsed/",
+  "homepage": "/time-elapsed/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

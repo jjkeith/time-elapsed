@@ -1,5 +1,8 @@
 # time-elapsed
 
+## Link
+https://jjkeith.github.io/time-elapsed/
+
 ## About
 
 I'm sorry for this, but if you ever wanted to calculate what percentage of your life you have spent in lockdown, now you can. I wanted a project that could be finished in a day or two so I didn't even check if someone else has already done this (and I assume someone has).
