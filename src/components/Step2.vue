@@ -8,6 +8,7 @@
       v-on:keyup.enter="checkAndEmitDOB()"
       :min="min"
       :max="max"
+      placeholder="MM/DD/YYYY"
       type="date"
       class="mb-2"
       ref="dateOfBirth"
@@ -42,7 +43,7 @@ export default {
   },
   data() {
     return {
-      dateOfBirth: "",
+      dateOfBirth: "01/01/1990",
       max: this.today,
       min: "01/01/1900",
       errorMessage: "",

@@ -14,7 +14,6 @@ As the app notes, the definition of lockdown being used here is *really* loose b
 I used vue-cli and bootstrap-vue for expediency.
 
 ## TODO
-cd
 - In a future in which there is an end to lockdown, the calculations will need to be updated with a user-set end date. 
 - I'd love to create more visual interest, particularly a pie graph on the final step. 
 - Using Bootstrap was a lazy way to get this done in one day. I'd rather replace more custom styles.

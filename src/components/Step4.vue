@@ -56,16 +56,19 @@ export default {
   },
   data() {
     return {
-      showShareOptions: false,
-      shareBody:
-        this.results > 0
-          ? encodeURIComponent(
-              "I have spent " +
-                this.results.toString() +
-                "% of my life in lockdown. Calculate your own percentage https://jjkeith.github.io/time-elapsed/"
-            )
-          : "Calculate what percentage of your life you have spent in lockdown at https://jjkeith.github.io/time-elapsed/"
+      showShareOptions: false
     };
+  },
+  computed: {
+    shareBody: function() {
+      return this.results > 0
+        ? encodeURIComponent(
+            "I have spent " +
+              this.results.toString() +
+              "% of my life in lockdown. Calculate your own percentage https://jjkeith.github.io/time-elapsed/"
+          )
+        : "Calculate what percentage of your life you have spent in lockdown at https://jjkeith.github.io/time-elapsed/";
+    }
   },
   methods: {
     shareWithEmail: function() {

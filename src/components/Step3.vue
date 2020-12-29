@@ -8,6 +8,7 @@
       v-on:keyup.enter="checkAndEmitLockdown()"
       :max="max"
       min="2019-12-31"
+      placeholder="MM/DD/YYYY"
       type="date"
       ref="startDateOfLockdown"
       class="mb-2"
@@ -43,7 +44,7 @@ export default {
   },
   data() {
     return {
-      startDateOfLockdown: "",
+      startDateOfLockdown: "03/13/2020",
       max: this.today,
       isError: false,
       errorMessage: ""

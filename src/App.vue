@@ -118,8 +118,10 @@ export default {
 
 $primary: #bb4430;
 $secondary: #306abb;
+$secondary-lightened: lighten($secondary, 5%);
 $body-color: #231f20;
 $danger: #bb4430;
+$danger-lightened: lighten(#bb4430, 10%);
 $background-color: #efe6dd;
 $element-background: #ffffff;
 $body-font: "Lato";
@@ -222,5 +224,43 @@ body {
 }
 div.arrow::before {
   border-top-color: $secondary !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $body-color;
+    #app {
+      color: $background-color;
+      h1,
+      h2 {
+        color: $secondary-lightened;
+      }
+      .error {
+        color: $danger-lightened;
+      }
+      .disclaimer,
+      .footer-text,
+      .footer-attribution {
+        color: darken($element-background, 10%);
+      }
+      .footer-nav a,
+      .footer-attribution a {
+        color: $element-background;
+      }
+      .footer-nav a:hover,
+      .footer-attribution a:hover {
+        color: $secondary-lightened;
+      }
+      .btn.btn-outline-secondary {
+        color: $secondary-lightened;
+        border-collapse: $secondary-lightened;
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $secondary-lightened;
+        }
+      }
+    }
+  }
 }
 </style>
